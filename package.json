@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://github.com/NeysonAdams/SlotMachine/",
+  "homepage": "https://NeysonAdams.github.io/SlotMachine/",
 
   "scripts": {
     "dev": "vite",
