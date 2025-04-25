@@ -5,8 +5,8 @@ import { motion, useAnimation } from 'framer-motion';
 const CELL_H        = 110;    
 const FAST_SPEED    = 0.8; 
 const SPEED_FACTOR = 0.5;   
-const SLOW_FACTOR   = 1.35;    
-const RUN_TIME_MS   = 4000;
+const SLOW_FACTOR   = 1.35;
+const IMG_PATH = `${import.meta.env.BASE_URL}images`;
 
 function next(d) {
     return (d + 1) % 10;
@@ -115,7 +115,7 @@ function next(d) {
         >
           <motion.img
             className='slot-digit'
-            src={`/images/${topDigit}.png`}
+            src={`${IMG_PATH}/${topDigit}.png`}
             alt={topDigit}
             initial={{ y: -CELL_H }}
             animate={topCtrl}
@@ -124,7 +124,7 @@ function next(d) {
     
           <motion.img
             className='slot-digit'
-            src={`/images/${bottomDigit}.png`}
+            src={`${IMG_PATH}/${bottomDigit}.png`}
             alt={bottomDigit}
             initial={{ y: 0 }}
             animate={bottomCtrl}
