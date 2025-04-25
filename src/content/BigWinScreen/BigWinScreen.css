@@ -1,0 +1,35 @@
+.big-win-screen {
+    position: fixed; 
+    inset: 0; 
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; 
+    display: flex;       
+    flex-direction: column;      
+    justify-content: center;   
+    align-items: center;       
+    box-sizing: border-box; 
+    overflow: hidden;   
+  }
+
+.screen__title
+{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.screen__button_repeat
+{
+    margin-top: 50px;
+    max-width:  300px;
+    padding: auto;
+    color: white;
+    background-color: mediumslateblue;
+}
+
+@media (max-width: 590px) {
+    .screen__title
+    {
+        max-width: 350px;
+    }
+}

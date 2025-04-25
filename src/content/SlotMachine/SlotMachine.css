@@ -1,0 +1,24 @@
+.slot-machine {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .slot-digit,
+  .slot-dollar {
+    width: 80px;   
+    height: 110px;  
+    object-fit: contain;
+  }
+
+@media (max-width: 590px) {
+    .slot-machine {
+        gap: 0.005rem;
+      }
+      .slot-digit,
+      .slot-dollar {
+        width: 50px;   
+        height: 80px;  
+        object-fit: contain;
+      }
+}
